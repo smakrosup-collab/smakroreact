@@ -1,0 +1,73 @@
+.cta {
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  color: white;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  margin: 1rem 0 2rem;
+  opacity: 0.9;
+}
+
+.donationInfo {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 2rem;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat span {
+  font-size: 2rem;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  font-size: 1.2em;
+}
+
+.kofi, .paypal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 200px;
+  transform: scale(1);
+  transition: transform 0.2s ease;
+}
+
+.kofi:hover, .paypal:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 640px) {
+  .donationInfo {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}

@@ -1,0 +1,46 @@
+.roadmap {
+  background: #f8fafc;
+}
+
+.timeline {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #e2e8f0;
+  z-index: 0;
+}
+
+.milestone {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1;
+  width: 30%;
+}
+
+.completed { border-left: 4px solid #22c55e; }
+.current { border-left: 4px solid #3b82f6; }
+.upcoming { border-left: 4px solid #64748b; }
+
+@media (max-width: 768px) {
+  .timeline {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .milestone {
+    width: 100%;
+  }
+}

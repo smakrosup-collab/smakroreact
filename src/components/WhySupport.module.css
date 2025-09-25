@@ -1,0 +1,30 @@
+.whySupport {
+  background: #ffffff;
+}
+
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content p {
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.content ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.content li {
+  background: #f8fafc;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-weight: 500;
+}
